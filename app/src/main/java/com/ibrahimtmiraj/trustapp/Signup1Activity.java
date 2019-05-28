@@ -97,8 +97,6 @@ public class Signup1Activity extends AppCompatActivity {
                 if (!fieldString.matches("^[a-zA-Z/-]*$")) {
                     signup1LastNameTextInputEditText.setError("Name can only contain alphabets and -");
                 }
-
-
             }
 
             @Override
@@ -116,12 +114,11 @@ public class Signup1Activity extends AppCompatActivity {
                 if (!fieldString.matches("^[a-zA-Z/-]*$")) {
                     signup1LastNameTextInputEditText.setError("Name can only contain alphabets and -");
                 }
-
-
             }
-
         });
 
 
     }
+
 }
+
