@@ -1,8 +1,16 @@
 <resources>
     <string name="app_name">Trust</string>
-    <string name="init_page_header">Hi!</string>
-    <string name="init_page_subheader">Welcome to Trust</string>
-    <string name="init_page_greeting">In an age where audio and video fakes are becoming stronger than ever, we use asymetric blockchain encryption to help keep your words <i>yours.</i></string>
-    <string name="signup_page_greeting">Your identity is singular. In order to protect against fakes, we need to connect your offline persona with your TRUST account.</string>
+    <string name="intro_page_header">Hi!</string>
+    <string name="intro_page_subheader">Welcome to Trust</string>
+    <string name="intro_page_greeting">In an age where audio and video fakes are becoming stronger than ever, we use asymetric blockchain encryption to help keep your words <i>yours.</i></string>
+    <string name="signup1_page_greeting">Your identity is singular. In order to protect against fakes, we need to connect your offline persona with your TRUST account.</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_in">Log In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="reenter_password">Re-enter Password</string>
+    <string name="phone_number">Phone Number</string>
+
+
 
 </resources>
