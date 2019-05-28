@@ -38,15 +38,15 @@ public class Signup1Activity extends AppCompatActivity {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 String fieldString = signup1FirstNameTextInputEditText.getText().toString();
 
-                if(fieldString.contentEquals("")) {
+                if (fieldString.contentEquals("")) {
                     signup1FirstNameTextInputEditText.setError("This field cannot be empty");
                 }
 
-                if(fieldString.contains(" ")) {
+                if (fieldString.contains(" ")) {
                     signup1FirstNameTextInputEditText.setError("Name cannot contain spaces");
                 }
 
-                if(!fieldString.matches("^[a-zA-Z/-]*$")) {
+                if (!fieldString.matches("^[a-zA-Z/-]*$")) {
                     signup1FirstNameTextInputEditText.setError("Name can only contain alphabets and -");
                 }
 
@@ -57,16 +57,64 @@ public class Signup1Activity extends AppCompatActivity {
             public void afterTextChanged(Editable s) {
                 String fieldString = signup1FirstNameTextInputEditText.getText().toString();
 
-                if(fieldString.contentEquals("")) {
+                if (fieldString.contentEquals("")) {
                     signup1FirstNameTextInputEditText.setError("This field cannot be empty");
                 }
 
-                if(fieldString.contains(" ")) {
+                if (fieldString.contains(" ")) {
                     signup1FirstNameTextInputEditText.setError("Name cannot contain spaces");
                 }
 
-                if(!fieldString.matches("^[a-zA-Z/-]*$")) {
+                if (!fieldString.matches("^[a-zA-Z/-]*$")) {
                     signup1FirstNameTextInputEditText.setError("Name can only contain alphabets and -");
+                }
+
+
+            }
+
+        });
+
+        final TextInputEditText signup1LastNameTextInputEditText = (TextInputEditText) findViewById(R.id.signup1LastNameTextInputEditText);
+
+        signup1LastNameTextInputEditText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                String fieldString = signup1LastNameTextInputEditText.getText().toString();
+
+                if (fieldString.contentEquals("")) {
+                    signup1LastNameTextInputEditText.setError("This field cannot be empty");
+                }
+
+                if (fieldString.contains(" ")) {
+                    signup1LastNameTextInputEditText.setError("Name cannot contain spaces");
+                }
+
+                if (!fieldString.matches("^[a-zA-Z/-]*$")) {
+                    signup1LastNameTextInputEditText.setError("Name can only contain alphabets and -");
+                }
+
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                String fieldString = signup1LastNameTextInputEditText.getText().toString();
+
+                if (fieldString.contentEquals("")) {
+                    signup1LastNameTextInputEditText.setError("This field cannot be empty");
+                }
+
+                if (fieldString.contains(" ")) {
+                    signup1LastNameTextInputEditText.setError("Name cannot contain spaces");
+                }
+
+                if (!fieldString.matches("^[a-zA-Z/-]*$")) {
+                    signup1LastNameTextInputEditText.setError("Name can only contain alphabets and -");
                 }
 
 
